@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fashion Gossip</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <div class="container"> 
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">HOME</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>FASHION GOSSIP</div>
+                </div>
+            </div>
+        </div> 
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <a href="chanel.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/chanel1.jpg);" ></div>
+                    </a>
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="asianwomen.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/asianwomen1.jpg);" ></div>
+                    </a>
+                    
+
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="italian.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/black1.jpg);" ></div>
+                    </a>
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="britneyspears.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/britney1.jpg);" ></div>
+                    </a>
+                    
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/fast1.jpg);" ></div>
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="asianhate.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/italie.jpg);" ></div>
+                    </a>
+                    
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/portuge1.jpg);" ></div>
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="teenvogue.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/teenvogue1.jpg);" ></div>
+                    </a>
+                    
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="meghankinney.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/meg1.jpg);" ></div>
+                    </a>
+                    
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="mtv.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/mtv1.jpg);" ></div>
+                    </a>
+                    
+                    <div class="image-text-wrapper">
+                       
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <a href="ladygaga.html">
+                        <div class="portfolio-img-background" style="background-image: url(images/lady1.jpg);" ></div>
+                    </a>
+                    
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/wang1.jpg);"></div>
+                    <div class="image-text-wrapper">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div> 
+</body>
+<footer>
+    <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper">
+                <a href="https://instagram.com">INSTAGRAM</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="https://twitter.com">TWITTER</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="https://tumblr.com">TUMBLR</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="http://tiktok.com">TIKTOK</a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="brand">
+                <div>ELISKA PELESOVA</div>
+            </div>
+        </div>
+    </div> 
+</footer>
+<script>
+    const portfolioItems = document.querySelectorAll (".portfolio-item-wrapper")
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

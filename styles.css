@@ -1,0 +1,123 @@
+/*masterstyle*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.containern{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles*/
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/*portfolio*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    padding: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 80px;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 360px;
+    width: 420px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 10;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/*about*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.profile-image-wrapper img {
+    width: 60%;
+    justify-content: center;
+    padding-left: 150px;
+}
+.profile-content-wrapper {
+    padding: 30px;
+}
+.profile-content-wrapper h1 {
+    color: darkred;
+}
+
+.chanel-wrapper{
+    text-align: center;
+    padding: 80px;
+}
+
+.chanel-content-wrapper {
+    padding-right: 80px;
+    
+}
+.chanel-image-wrapper img {
+    width: 60%;
+    justify-content: center;
+    padding-left: 150px;
+
+}
